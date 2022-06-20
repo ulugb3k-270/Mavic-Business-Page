@@ -134,35 +134,52 @@ section {
 }
 
 /* MEDIA HAMBURGER */
-.hamburger {
-  height: 2px;
-  width: 24px;
-  background-color: var(--primary-color);
-  position: relative;
-  display: none;
-  transition: .4s ease;
-}
 
-.hamburger::before {
-  content: "";
-  position: absolute;
-  top: -4px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: var(--primary-color);
-}
-.hamburger::after {
-  content: "";
-  position: absolute;
-  top: 4px;
-  right: 0;
-  width: 16px;
-  height: 2px;
-  background-color: var(--primary-color);
-}
+
 
 .hamburger-menu {
   display: none;
-
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 2;
+  
 }
+
+#checkbox {
+  display: none;
+}
+
+.hamburger {
+  position: relative;
+  padding: 20px;
+  display: none;
+  cursor: pointer;
+  transform: translateX(-5px);
+}
+
+.line {
+  position: absolute;
+  width: 21px;
+  height: 2px;
+  background: var(--primary-color);
+  border-radius: 3px;
+  transition: transform 0.25s, opacity 0.35s;
+}
+
+.line-top {
+  transform: translateY(-7px);
+}
+.line-bottom {
+  transform: translateY(7px);
+}
+
+#checkbox:checked~.line-top{
+  transform: rotate(45deg);
+}
+#checkbox:checked~.line-middle{
+  transform: translateX(16px);
+  opacity: 0;
+}
+#checkbox:checked~.line-bottom{
+  transform: rotate(-45deg);
+}
+

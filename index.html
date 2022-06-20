@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./styles/about.css" />
     <!-- DEFAULT CSS -->
     <link rel="stylesheet" href="./styles/root.css" />
+    <!-- MEDIA CSS -->
+    <link rel="stylesheet" href="./styles/media.css" />
     <!-- GOOGLE ICONS -->
     <link
       rel="stylesheet"
@@ -31,6 +33,7 @@
         alt=""
         class="header-bg"
       />
+
       <div class="container">
         <nav class="header-nav">
           <div class="nav-left">
@@ -72,7 +75,36 @@
             <button class="nav-right-btn">КУПИТЬ</button>
             <p class="nav-right-phone">8 (050) 567 67 67</p>
           </div>
+          <!-- ==== HAMBURGER ==== -->
+          <label for="checkbox" class="hamburger">
+            <input type="checkbox" id="checkbox" />
+            <span class="line line-top"></span>
+            <span class="line line-middle"></span>
+            <span class="line line-bottom"></span>
+          </label>
         </nav>
+
+        <nav class="hamburger-menu">
+          <ul class="hamburger-nav-list">
+            <li class="hamburger-nav-item">
+              <a href="" class="hamburger-nav-link">О ДРОНЕ</a>
+            </li>
+            <li class="hamburger-nav-item">
+              <a href="" class="hamburger-nav-link">ПРЕИМУЩЕСТВА</a>
+            </li>
+            <li class="hamburger-nav-item">
+              <a href="" class="hamburger-nav-link">ХАРАКТЕРИСТИКИ</a>
+            </li>
+            <li class="hamburger-nav-item">
+              <a href="" class="hamburger-nav-link">ВОПРОСЫ</a>
+            </li>
+            <li class="hamburger-nav-item">
+              <a href="" class="hamburger-nav-link">КОНТАКТЫ</a>
+            </li>
+          </ul>
+          <p class="hamburger-phone-number">8 (800) 567 67 67</p>
+        </nav>
+
         <section class="welcome">
           <h1>Mavic 2 Pro</h1>
           <img
@@ -104,5 +136,7 @@
         </section>
       </div>
     </header>
+
+    <script src="script/app.js"></script>
   </body>
 </html>

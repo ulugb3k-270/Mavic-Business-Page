@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../about/about.css" />
     <link rel="stylesheet" href="../../styles/app.css" />
     <link rel="stylesheet" href="./contact.css" />
+    <!-- MEDIA CSS -->
+    <link rel="stylesheet" href="../../styles/media.css" />
     <!-- ROOT CSS -->
     <link rel="stylesheet" href="../../styles/root.css" />
     <!-- GOOGLE ICONS -->
@@ -32,6 +34,28 @@
         alt=""
         class="about-bg"
       />
+      <!-- HAMBURGER MENU START -->
+      <nav class="hamburger-menu">
+        <ul class="hamburger-nav-list">
+          <li class="hamburger-nav-item">
+            <a href="" class="hamburger-nav-link">О ДРОНЕ</a>
+          </li>
+          <li class="hamburger-nav-item">
+            <a href="" class="hamburger-nav-link">ПРЕИМУЩЕСТВА</a>
+          </li>
+          <li class="hamburger-nav-item">
+            <a href="" class="hamburger-nav-link">ХАРАКТЕРИСТИКИ</a>
+          </li>
+          <li class="hamburger-nav-item">
+            <a href="" class="hamburger-nav-link">ВОПРОСЫ</a>
+          </li>
+          <li class="hamburger-nav-item">
+            <a href="" class="hamburger-nav-link">КОНТАКТЫ</a>
+          </li>
+        </ul>
+        <p class="hamburger-phone-number">8 (800) 567 67 67</p>
+      </nav>
+      <!-- HAMBURGER MENU END -->
       <div class="container">
         <section class="about" id="about">
           <nav class="header-nav">
@@ -51,7 +75,7 @@
                   >ПРЕИМУЩЕСТВА</a
                 >
               </li>
-              <li class="nav-item ">
+              <li class="nav-item">
                 <a href="../specifications/specifications.html" class="nav-link"
                   >ХАРАКТЕРИСТИКИ</a
                 >
@@ -70,6 +94,15 @@
               <button class="nav-right-btn">КУПИТЬ</button>
               <p class="nav-right-phone">8 (050) 567 67 67</p>
             </div>
+
+            <!-- HAMBURGER -->
+            <label for="checkbox" class="hamburger">
+              <input type="checkbox" id="checkbox" />
+              <span class="line line-top"></span>
+              <span class="line line-middle"></span>
+              <span class="line line-bottom"></span>
+            </label>
+            <!-- HAMBURGER END -->
           </nav>
 
           <!-- ================== header End ================ -->
@@ -141,5 +174,8 @@
         </section>
       </div>
     </main>
+
+    <!-- MAIN SCRIPT -->
+    <script src="../../script/app.js"></script>
   </body>
 </html>
