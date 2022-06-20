@@ -73,17 +73,35 @@
   left: -5%;
 }
 
-.about-main-card.bottom{
-    transform: translate(109px, 100px);
+.about-main-card.bottom {
+  transform: translate(109px, 100px);
 }
 
 /* ==== LINES ==== */
 .about-main-card-line.sec-third {
-    top: 130%;
-    right: 99%;
-    transform: rotate(350deg);
+  top: 130%;
+  right: 99%;
+  transform: rotate(350deg);
 }
 .about-main-card-line.third-fourth {
   top: 0%;
   right: 2%;
+}
+
+/* animation cards  */
+
+.card-st,
+.card-nd,
+.card-rd,
+.card-th {
+  animation: card-st 2s backwards;
+}
+
+@keyframes card-st {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
