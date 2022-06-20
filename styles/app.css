@@ -1,4 +1,3 @@
-
 .container {
   max-width: 1440px;
   width: 100%;
@@ -6,7 +5,8 @@
   padding: 0 10px;
 }
 
-.header, section {
+.header,
+section {
   position: relative;
   height: 100vh;
   font-family: "Ubuntu", sans-serif;
@@ -19,6 +19,7 @@
   z-index: -1;
   width: 100%;
   height: 100vh;
+  object-fit: cover;
 }
 
 .header-nav {
@@ -130,4 +131,38 @@
 
 .icon:hover {
   opacity: 1;
+}
+
+/* MEDIA HAMBURGER */
+.hamburger {
+  height: 2px;
+  width: 24px;
+  background-color: var(--primary-color);
+  position: relative;
+  display: none;
+  transition: .4s ease;
+}
+
+.hamburger::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+.hamburger::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 0;
+  width: 16px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.hamburger-menu {
+  display: none;
+
 }
